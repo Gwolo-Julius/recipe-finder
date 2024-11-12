@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --bg-clr: hsl(24, 86%, 93%);
+  --box-shadow-clr: rgba(0, 0, 0, 0.122);
+  --accent-clr: rgb(255, 85, 0);
+  --transition: 0.4s;
+}
+
+body {
+  background-color: var(--bg-clr);
+}
+.food_list {
+  width: 76%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  align-items: baseline;
+  gap: 1.5rem;
+}
+
+.food_name {
+  padding: 0.5rem;
+  /* height: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: teal; */
+}
+.food_detail {
+  background-color: #fff;
+  box-shadow: 0 3px 6px var(--box-shadow-clr);
+  text-align: center;
+  /* max-width: 300px; */
+  height: 280px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+/* .img_wrapper {
+  height: 200px;
+} */
+.food_detail img {
+  width: 100%;
+  object-fit: contain;
+  transition: var(--transition);
+}
+.food_detail:hover img {
+  transform: scale(1.08);
+}
+
+.btn {
+  position: absolute;
+  border: none;
+  padding: 0.5rem;
+  color: #fff;
+  font-weight: 300;
+  background-color: var(--accent-clr);
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  color: var(--accent-clr);
+  background-color: black;
+}
+.search_element {
+  position: fixed;
+  top: -25px;
+  left: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  margin: 2rem auto;
+  border: 1px solid gray;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  transform: translate(-50%);
+  z-index: 200;
+}
+
+.search_element input {
+  padding: 0.4rem 0.5rem;
+  width: 90%;
+  border: none;
+  outline: none;
+}
+.ri-search-line {
+  cursor: pointer;
+  font-size: 1.4rem;
+  margin-right: 0.4rem;
+  color: gray;
+}
