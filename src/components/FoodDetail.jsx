@@ -14,7 +14,7 @@ const FoodDetail = ({ foodId }) => {
       setFood(data);
     }
     fetchFoodDetails();
-  }, []);
+  }, [foodId]);
   return (
     <div className="food__detail">
       <div className="food__title">

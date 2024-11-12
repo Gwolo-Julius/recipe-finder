@@ -1,5 +1,6 @@
 .parent__container{
   display: flex;
   gap: 1rem;
+  width: 94%;margin: auto;
   background-color: rosybrown;
 }
