@@ -20,6 +20,9 @@ const FoodDetail = ({ foodId }) => {
       <div className="food__title">
         <h4>{food.title}</h4>
       </div>
+      <div className="food__image">
+        <img src={food.image} alt="" />
+      </div>
       <h3>I'm food detail container{foodId}</h3>
     </div>
   );
