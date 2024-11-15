@@ -4,5 +4,14 @@
   width: 94%;
   margin: auto;
   justify-content: space-between;
+  align-items: self-start;
   /* background-color: rosybrown; */
+}
+
+@media screen and (max-width: 600px) {
+  .parent__container {
+    flex-direction: column;
+
+    /* justify-content: center; */
+  }
 }

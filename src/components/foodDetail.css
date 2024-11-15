@@ -41,8 +41,45 @@
   padding: 0.5rem;
 }
 
+.sub__info {
+  text-align: center;
+  margin-bottom: 0.7rem;
+  /* background-color: teal; */
+}
+
+.sub__info span {
+  margin-right: 0.5rem;
+}
 .pricing {
   display: flex;
   justify-content: center;
   margin-bottom: 0.5em;
+  color: var(--accent-clr);
+}
+
+.instructions_detail {
+  color: rgb(94, 94, 94);
+}
+
+.ingredient_container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 0.6rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem;
+}
+
+.image_con {
+  width: 100px;
+  overflow: hidden;
+}
+
+.name {
+  font-size: 0.9rem;
+}
+
+.amount {
+  color: var(--accent-clr);
+  font-weight: 300;
 }

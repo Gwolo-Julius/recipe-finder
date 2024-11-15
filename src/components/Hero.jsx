@@ -7,7 +7,6 @@ import Search from "./Search";
 const Hero = () => {
   return (
     <>
-     
       <div
         className="hero__container"
         style={{
