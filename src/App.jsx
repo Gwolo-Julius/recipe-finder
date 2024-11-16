@@ -5,6 +5,7 @@ import FoodList from "./components/FoodList";
 import Hero from "./components/Hero";
 import Container from "./components/Container";
 import FoodDetail from "./components/FoodDetail";
+import Footer from "./components/Footer";
 
 function App({ setQuery }) {
   const [foodData, setFoodData] = useState([]);
@@ -23,6 +24,7 @@ function App({ setQuery }) {
         />
         <FoodDetail foodId={foodId} />
       </Container>
+      <Footer/>
     </>
   );
 }

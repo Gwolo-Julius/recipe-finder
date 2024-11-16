@@ -1,7 +1,7 @@
 import React from "react";
 import Search from "./Search";
 // import FoodItems from "./FoodItems";
-const FoodList = ({ foodData, setFoodData , setFoodId}) => {
+const FoodList = ({ foodData, setFoodData, setFoodId }) => {
   return (
     <div className="food_list">
       {foodData.map((food) => (
@@ -10,7 +10,9 @@ const FoodList = ({ foodData, setFoodData , setFoodId}) => {
             <img src={food.image} alt="" />
           </div>
           <div className="food_name">{food.title}</div>
-          <button onClick={()=>setFoodId(food.id)} className="btn">View Recipe</button>
+          <button onClick={() => setFoodId(food.id)} className="btn">
+            View Recipe
+          </button>
         </div>
       ))}
       {/* <Search foodData={foodData} setFoodData={setFoodData} /> */}

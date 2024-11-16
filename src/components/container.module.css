@@ -11,7 +11,7 @@
 @media screen and (max-width: 600px) {
   .parent__container {
     flex-direction: column;
-
-    /* justify-content: center; */
+    align-items: center;
+    justify-content: center;
   }
 }

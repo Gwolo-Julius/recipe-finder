@@ -39,7 +39,7 @@ const FoodDetail = ({ foodId }) => {
               </strong>
             </span>
             <span>
-              <strong>👨‍👩‍👧‍👧 serves: {food.servings} People</strong>
+              <strong>👨‍👩‍👧‍👧 servings: {food.servings}</strong>
             </span>
             <span>
               <strong>{food.vegan ? "🐄  Vegan" : ""}</strong>
@@ -52,7 +52,7 @@ const FoodDetail = ({ foodId }) => {
           </div>
         </div>
       </div>
-      <h1>Ingredients</h1>
+      <h2>Ingredients</h2>
       {isLoading ? (
         <p>Loading...</p>
       ) : (

@@ -13,6 +13,7 @@
   border: 1px solid rgb(187, 187, 187);
   overflow: hidden;
   transition: 0.4s;
+
   /* max-width: 500px; */
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.19); */
 }
@@ -75,6 +76,11 @@
   overflow: hidden;
 }
 
+.image_con img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .name {
   font-size: 0.9rem;
 }
@@ -82,4 +88,11 @@
 .amount {
   color: var(--accent-clr);
   font-weight: 300;
+}
+
+@media screen and (max-width: 500px) {
+  .food__detail {
+    margin: auto;
+    width: 90%;
+  }
 }
