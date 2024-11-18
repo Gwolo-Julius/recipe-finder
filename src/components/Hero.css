@@ -9,6 +9,8 @@
 }
 
 .hero__container img {
+  background-repeat: no-repeat;
+  object-fit: cover;
   /* position: absolute; */
   z-index: 19;
 }
@@ -28,7 +30,8 @@
 .hero__overlay h1 {
   color: var(--bg-clr);
   font-size: 3.8rem;
-  text-align: center;margin-top: 2.5rem;
+  text-align: center;
+  margin-top: 2.5rem;
 }
 .hero__overlay span {
   color: var(--accent-clr);
@@ -58,7 +61,8 @@
 
 .rotating__pizza img {
   width: 100%;
-  animation: rotate 4s infinite;
+
+  animation: rotate 8s linear infinite;
 }
 
 @keyframes rotate {

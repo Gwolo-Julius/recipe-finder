@@ -11,7 +11,8 @@ const Hero = () => {
         className="hero__container"
         style={{
           backgroundImage: `url(${hero_1})`,
-          height: "65vh",
+          // objectFit: "cover",
+          height: "66vh",
           width: "100%",
           zIndex: "100",
         }}
